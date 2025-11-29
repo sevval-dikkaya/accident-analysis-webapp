@@ -1,0 +1,292 @@
+[
+{
+  "model": "accident_analysis.accidents",
+  "pk": 1,
+  "fields": {
+    "date_of_accident": "2019-01-07",
+    "damage_type": "moderate",
+    "address_accident": 94103,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 2,
+  "fields": {
+    "date_of_accident": "2019-01-10",
+    "damage_type": "minor",
+    "address_accident": 94103,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 3,
+  "fields": {
+    "date_of_accident": "2019-02-14",
+    "damage_type": "minor",
+    "address_accident": 94102,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 4,
+  "fields": {
+    "date_of_accident": "2019-02-27",
+    "damage_type": "minor",
+    "address_accident": 94102,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 5,
+  "fields": {
+    "date_of_accident": "2019-03-08",
+    "damage_type": "minor",
+    "address_accident": 94103,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 6,
+  "fields": {
+    "date_of_accident": "2019-03-23",
+    "damage_type": "minor",
+    "address_accident": 94109,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 7,
+  "fields": {
+    "date_of_accident": "2019-03-24",
+    "damage_type": "moderate",
+    "address_accident": 94103,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 8,
+  "fields": {
+    "date_of_accident": "2019-04-03",
+    "damage_type": "minor",
+    "address_accident": 94103,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 9,
+  "fields": {
+    "date_of_accident": "2019-04-10",
+    "damage_type": "minor",
+    "address_accident": 94115,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 10,
+  "fields": {
+    "date_of_accident": "2019-04-10",
+    "damage_type": "minor",
+    "address_accident": 94109,
+    "vehicles": [
+      1
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 11,
+  "fields": {
+    "date_of_accident": "2019-01-10",
+    "damage_type": "moderate",
+    "address_accident": 94107,
+    "vehicles": [
+      2
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 12,
+  "fields": {
+    "date_of_accident": "2019-01-26",
+    "damage_type": "minor",
+    "address_accident": 94041,
+    "vehicles": [
+      3
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 13,
+  "fields": {
+    "date_of_accident": "2019-02-06",
+    "damage_type": "minor",
+    "address_accident": 94043,
+    "vehicles": [
+      3
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 14,
+  "fields": {
+    "date_of_accident": "2019-02-10",
+    "damage_type": "minor",
+    "address_accident": 94040,
+    "vehicles": [
+      3
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 15,
+  "fields": {
+    "date_of_accident": "2019-02-26",
+    "damage_type": "major",
+    "address_accident": 94024,
+    "vehicles": [
+      3
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 16,
+  "fields": {
+    "date_of_accident": "2019-03-26",
+    "damage_type": "minor",
+    "address_accident": 94303,
+    "vehicles": [
+      3
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 17,
+  "fields": {
+    "date_of_accident": "2019-02-28",
+    "damage_type": "minor",
+    "address_accident": 94043,
+    "vehicles": [
+      4
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 18,
+  "fields": {
+    "date_of_accident": "2019-03-06",
+    "damage_type": "minor",
+    "address_accident": 94306,
+    "vehicles": [
+      5
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 19,
+  "fields": {
+    "date_of_accident": "2019-03-12",
+    "damage_type": "minor",
+    "address_accident": 94041,
+    "vehicles": [
+      5
+    ]
+  }
+},
+{
+  "model": "accident_analysis.accidents",
+  "pk": 20,
+  "fields": {
+    "date_of_accident": "2019-04-11",
+    "damage_type": "minor",
+    "address_accident": 94103,
+    "vehicles": [
+      5
+    ]
+  }
+},
+{
+  "model": "accident_analysis.vehicles",
+  "pk": 1,
+  "fields": {
+    "manufacturer_name": "Cruise",
+    "make": "Chevrolet",
+    "model": "Bolt",
+    "vehicle_year": 2019
+  }
+},
+{
+  "model": "accident_analysis.vehicles",
+  "pk": 2,
+  "fields": {
+    "manufacturer_name": "Aurora Innovation Inc",
+    "make": "Lincoln",
+    "model": "MKZ",
+    "vehicle_year": 2017
+  }
+},
+{
+  "model": "accident_analysis.vehicles",
+  "pk": 3,
+  "fields": {
+    "manufacturer_name": "Waymo LLC",
+    "make": "Chrysler",
+    "model": "Pacifica",
+    "vehicle_year": 2017
+  }
+},
+{
+  "model": "accident_analysis.vehicles",
+  "pk": 4,
+  "fields": {
+    "manufacturer_name": "Lyft, Inc.",
+    "make": "Ford",
+    "model": "Fusion Hybrid",
+    "vehicle_year": 2017
+  }
+},
+{
+  "model": "accident_analysis.vehicles",
+  "pk": 5,
+  "fields": {
+    "manufacturer_name": "Lyft, Inc.",
+    "make": "Ford",
+    "model": "Fusion",
+    "vehicle_year": 2018
+  }
+}
+]
