@@ -1,4 +1,4 @@
-# Accident Analysis Web App
+# AV Accident Analysis Web App
 
 A Django web application for analyzing and tracking autonomus vehicle accident reports.
 
