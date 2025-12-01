@@ -15,6 +15,45 @@
 
     <div class="container">
         <h1 class="mb-4">Accident Reports</h1>
+
+        <!-- Filter Form -->
+        <div class="card mb-4">
+            <div class="card-header">
+                Filter Accidents
+            </div>
+            <div class="card-body">
+                <form method="get" class="row g-3">
+                    <div class="col-md-3">
+                        <label for="manufacturer" class="form-label">Manufacturer</label>
+                        <input type="text" class="form-control" id="manufacturer" name="manufacturer" value="{{ request.GET.manufacturer }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="damage_type" class="form-label">Damage Type</label>
+                        <select class="form-select" id="damage_type" name="damage_type">
+                            <option value="">All</option>
+                            {% for value, label in filter.form.fields.damage_type.choices %}
+                                <option value="{{ value }}" {% if request.GET.damage_type == value %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="date_of_accident" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date_of_accident" name="date_of_accident" value="{{ request.GET.date_of_accident }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="address_accident" class="form-label">Zip Code</label>
+                        <input type="number" class="form-control" id="address_accident" name="address_accident" value="{{ request.GET.address_accident }}">
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                        <div>
+                            <button type="submit" class="btn btn-primary">Filter</button>
+                            <a href="{% url 'accident_list' %}" class="btn btn-secondary">Reset</a>
+                        </div>
+                        <a href="{% url 'export_accidents_xlsx' %}?{{ request.GET.urlencode }}" class="btn btn-success">Export to Excel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
         
         {% if accidents %}
             <div class="row">
