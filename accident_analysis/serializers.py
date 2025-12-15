@@ -7,7 +7,7 @@ class VehicleSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class AccidentSerializer(serializers.ModelSerializer):
-    vehicles = VehicleSerializer(many=True, read_only=True)
+    vehicles = serializers.PrimaryKeyRelatedField(many=True, queryset=Vehicles.objects.all())
 
     class Meta:
         model = Accidents

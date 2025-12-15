@@ -13,7 +13,7 @@ from django.db.models.functions import TruncMonth
 class AccidentFilter(filters.FilterSet):
     manufacturer = filters.CharFilter(field_name='vehicles__manufacturer_name', lookup_expr='icontains')
     damage_type = filters.ChoiceFilter(choices=Accidents.DAMAGE_TYPE_CHOICES)
-    address_accident = filters.NumberFilter()
+    address_accident = filters.CharFilter(lookup_expr='icontains')
     date_of_accident = filters.DateFilter()
 
     class Meta:
