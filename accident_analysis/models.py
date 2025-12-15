@@ -25,4 +25,7 @@ class Vehicles(models.Model):
     make = models.TextField(blank=True)
     model = models.TextField(blank=True)
     vehicle_year = models.IntegerField(blank=True)
+
+    def __str__(self):
+        return f"{self.manufacturer_name} - {self.vehicle_year} {self.make} {self.model}"
     
