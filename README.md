@@ -13,6 +13,28 @@ A Django web application for analyzing and tracking autonomous vehicle accident 
 *   **Excel Export:** Export filtered accident data to `.xlsx` format.
 *   **REST API:** Full API access to accident data with filtering capabilities.
 
+## Database Schema
+
+The following Entity Relationship Diagram (ERD) illustrates the data model:
+
+```mermaid
+erDiagram
+    ACCIDENTS {
+        int id PK
+        date date_of_accident
+        string damage_type
+        int address_accident
+    }
+    VEHICLES {
+        int id PK
+        string manufacturer_name
+        string make
+        string model
+        int vehicle_year
+    }
+    ACCIDENTS }|--|{ VEHICLES : involves
+```
+
 ## Prerequisites
 
 - Python 3.8 or higher
@@ -54,6 +76,29 @@ python manage.py loaddata accidents_data.json
 
 2. **Access the application:**
    Open your web browser and go to: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+## Docker Support
+
+You can run the application using Docker Compose, which sets up the environment automatically.
+
+1.  **Build and Run:**
+    ```bash
+    docker-compose up --build
+    ```
+
+2.  **Access the application:**
+    The app will be available at [http://localhost:8000/](http://localhost:8000/).
+
+## Testing
+
+The project includes a test suite using `pytest`.
+
+1.  **Run Tests:**
+    ```bash
+    pytest
+    ```
+
+    This will run all unit tests defined in `accident_analysis/tests.py`.
 
 ## API Usage
 
